@@ -1,7 +1,8 @@
 'use strict';
 
+new ClipboardJS('.lock-copy');
+
 const code = document.querySelector('.lock-code'),
-copyBtn = document.querySelector('.lock-copy'),
 genBtn = document.querySelector('.lock-generate'),
 history = document.querySelector('.code-history');
 
