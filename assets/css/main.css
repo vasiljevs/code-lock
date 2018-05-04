@@ -1,5 +1,102 @@
+:root {
+  --woodsmoke: #151D1C;
+  --logCabin: #272A21;
+  --heavyMetal: #2F3228;
+  --asparagus: #7DA356;
+  --friarGray: #827D77; 
+  --darkFern: #0D420D;
+  --mineShaft: #2B2A2A;
+  --deepForestGreen: #0C3A0C;
+  --snuff: #DFE2F1;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0; 
+}
+
+html {
+  background: var(--woodsmoke);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.lock {
+  background: var(--logCabin);
+  border: 1px solid var(--darkFern);
+  border-radius: 4px;
+  padding: 10px;
+  width: 320px;
+}
+
+.lock-item {
+  background: var(--heavyMetal);
+  margin: 5px 0; 
+}
+
+.lock-code {
+  cursor: default;
+  color: var(--friarGray);
+  font-size: 2.625rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px var(--mineShaft);
+  padding: 10px 0;
+}
+
+.lock-code::selection {
+  background: none;
+}
+
+.lock-code,
+.lock-generate {
+  text-align: center; 
+}
+
+.lock-copy,
+.lock-generate {
+  background: var(--deepForestGreen);
+  color: var(--asparagus);
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase; 
+  width: 100%; 
+}
+
+.lock-copy:hover,
+.lock-generate:hover {
+  text-decoration: underline;
+}
+
+.lock-copy:focus,
+.lock-generate:focus {
+  outline: none; 
+}
+
+.lock-code,
+.lock-copy,
+.lock-generate {
+  border: 2px solid var(--darkFern);
+}
+
+.code-history {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.code-history li {
+  color: var(--snuff);
+  padding: 5px 10px;
 }
