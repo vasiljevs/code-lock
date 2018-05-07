@@ -9,14 +9,14 @@ const digits = document.querySelector('.lock-code'),
 
 const randNum = () => (Math.floor(Math.random() * 10000) + 10000).toString().substring(1);
 
-function regenerateCodeHistory(codesArray) {
+const regenerateCodeHistory = (codesArr) => {
   // Delete code history
   while (history.firstChild) {
     history.removeChild(history.firstChild);
   }
 
   // Generate code history
-  codesArray.reverse().forEach(num => {
+  codesArr.reverse().forEach(num => {
     const li = document.createElement('li'),
     data = document.createTextNode(num);
 
@@ -55,5 +55,5 @@ const listArr = JSON.parse(localStorage.getItem('codes'));
 
 // Generate code history on page load
 if (listArr != null) {
-  regenerateCodeHistory(listArr)
+  regenerateCodeHistory(listArr);
 }
