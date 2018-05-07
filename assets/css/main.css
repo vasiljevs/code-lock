@@ -7,59 +7,42 @@
   --darkFern: #0D420D;
   --mineShaft: #2B2A2A;
   --deepForestGreen: #0C3A0C;
-  --snuff: #DFE2F1;
-}
-
+  --snuff: #DFE2F1; }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; 
 }
-
 html {
-  background: var(--woodsmoke);
-}
-
+  background: var(--woodsmoke); }
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-}
-
+  height: 100vh; }
 .lock {
   background: var(--logCabin);
   border: 1px solid var(--darkFern);
   border-radius: 4px;
   padding: 10px;
-  width: 320px;
-}
-
+  width: 320px; }
 .lock-item {
   background: var(--heavyMetal);
-  margin: 5px 0; 
-}
-
+  margin: 5px 0; }
+.lock-item > * {
+  border: 2px solid var(--darkFern);
+  text-align: center; }
 .lock-code {
   cursor: default;
   color: var(--friarGray);
   font-size: 2.625rem;
   letter-spacing: 2px;
   text-shadow: 2px 2px var(--mineShaft);
-  padding: 10px 0;
-}
-
+  padding: 10px 0; }
 .lock-code::selection {
-  background: none;
-}
-
-.lock-code,
-.lock-generate {
-  text-align: center; 
-}
-
+  background: none; }
 .lock-copy,
 .lock-generate {
   background: var(--deepForestGreen);
@@ -70,33 +53,18 @@ body {
   font-weight: bold;
   font-size: 1rem;
   text-transform: uppercase; 
-  width: 100%; 
-}
-
+  width: 100%; }
 .lock-copy:hover,
 .lock-generate:hover {
-  text-decoration: underline;
-}
-
+  text-decoration: underline; }
 .lock-copy:focus,
 .lock-generate:focus {
-  outline: none; 
-}
-
-.lock-code,
-.lock-copy,
-.lock-generate {
-  border: 2px solid var(--darkFern);
-}
-
+  outline: none; }
 .code-history {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  margin-top: 10px;
-}
-
-.code-history li {
+  margin-top: 10px; }
+.code-item {
   color: var(--snuff);
-  padding: 5px 10px;
-}
+  padding: 5px 10px; }
