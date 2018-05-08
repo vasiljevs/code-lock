@@ -40,7 +40,7 @@ generate.addEventListener('click', () => {
   numArr.push(digits.textContent);
   let codes = numArr.slice(-5);
   localStorage.setItem('codes', JSON.stringify(codes));
-  regenerateCodeHistory(codes)
+  regenerateCodeHistory(codes);
 });
 
 copy.addEventListener('click', () => {
