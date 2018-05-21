@@ -26,11 +26,11 @@ body {
   background: var(--logCabin);
   border: 1px solid var(--darkFern);
   border-radius: 4px;
-  padding: 10px;
-  width: 320px; }
+  padding: .625rem;
+  width: 20rem; }
 .lock-item {
   background: var(--heavyMetal);
-  margin: 5px 0; }
+  margin: .3125rem 0; }
 .lock-item > * {
   border: 2px solid var(--darkFern);
   text-align: center; }
@@ -40,7 +40,7 @@ body {
   font-size: 2.625rem;
   letter-spacing: 2px;
   text-shadow: 2px 2px var(--mineShaft);
-  padding: 10px 0; }
+  padding: .625rem 0; }
 .lock-code::selection {
   background: none; }
 .lock-copy,
@@ -49,7 +49,7 @@ body {
   color: var(--asparagus);
   cursor: pointer;
   display: block;
-  padding: 10px;
+  padding: .625rem;
   font-weight: bold;
   font-size: 1rem;
   text-transform: uppercase; 
@@ -64,7 +64,7 @@ body {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  margin-top: 10px; }
+  margin-top: .625rem; }
 .code-item {
   color: var(--snuff);
-  padding: 5px 10px; }
+  padding: .3125rem .625rem; }
