@@ -15,13 +15,16 @@
 }
 html {
   background: var(--woodsmoke); }
+html,
+body {
+  height: 100%; }
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; }
+  height: 100%; }
 .lock {
   background: var(--logCabin);
   border: 1px solid var(--darkFern);
