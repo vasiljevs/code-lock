@@ -56,4 +56,6 @@ const listArr = JSON.parse(localStorage.getItem('codes'));
 // Generate code history on page load
 if (listArr != null) {
   regenerateCodeHistory(listArr);
+  // Display the last generated code
+  digits.textContent = listArr.reverse()[listArr.length - 1];
 }
